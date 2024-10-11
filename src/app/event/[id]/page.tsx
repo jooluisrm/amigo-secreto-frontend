@@ -24,7 +24,7 @@ const Page = async ({ params }: Props) => {
 
             <Search id={eventItem.id}/>
 
-            <footer className="mt-5 text-sm">Criado por @jão.luisrm_</footer>
+            <footer className="mt-5 text-sm">Criado por @jao.luisrm_</footer>
         </main>
     );
 };
