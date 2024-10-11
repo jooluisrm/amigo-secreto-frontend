@@ -15,7 +15,7 @@ export const Search = ({ id }: Props) => {
 
     const handleSearchButton = async (cpf: string) => {
         if(!cpf) return;
-        const result = await api.searchCPF(id, cpf);
+        const result = await api.searchCPF(id, cpf); // Api erro
         if(!result) return alert("Desculpe, não encontramos seu CPF!");
 
         setResults(result);
