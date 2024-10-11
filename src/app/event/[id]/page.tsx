@@ -1,4 +1,5 @@
 import * as api from "@/api/site";
+import { Search } from "@/components/site/Search";
 import { event } from "@/types/Event";
 import { redirect } from "next/navigation";
 
@@ -21,7 +22,7 @@ const Page = async ({ params }: Props) => {
                 <p className="text-sm mb-5">{eventItem.discription}</p>
             </header>
 
-            ...
+            <Search id={eventItem.id}/>
 
             <footer className="mt-5 text-sm">Criado por @jão.luisrm_</footer>
         </main>
