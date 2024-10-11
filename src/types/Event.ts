@@ -5,3 +5,7 @@ export type Event = {
     discription: string;
     grouped: boolean;
 }
+
+export const event: Event[] = [
+    { id: 1, status: true, title: "Evento Teste Boladão", discription: "Minino: R$ 100,00", grouped: true }
+]
