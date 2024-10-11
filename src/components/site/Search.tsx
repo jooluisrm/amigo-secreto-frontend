@@ -4,6 +4,7 @@ import { SearchResult } from "@/types/SearchResult";
 import { useState } from "react";
 import { SearchForm } from "./SearchForm";
 import * as api from '@/api/site';
+import { SearchReveal } from "./SearcheReveal";
 
 type Props = {
     id: number;
@@ -24,7 +25,7 @@ export const Search = ({ id }: Props) => {
     return (
         <section className="bg-gray-900 p-5 rounded">
             {!results && <SearchForm onSearchButton={handleSearchButton}/>}
-            {/*results && <SearchReveal results={results}/>*/}
+            {results && <SearchReveal results={results}/>}
         </section>
     );
 }
