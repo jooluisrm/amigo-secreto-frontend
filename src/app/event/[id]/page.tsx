@@ -1,17 +1,15 @@
 import * as api from "@/api/site";
 import { Search } from "@/components/site/Search";
-import { event } from "@/types/Event";
 import { redirect } from "next/navigation";
 
 type Props = { params: { id: string } };
 
 const Page = async ({ params }: Props) => {
 
-    /* Para qnd a api funcionar
+    
     const eventItem = await api.getEvent(parseInt(params.id));
     if(!eventItem || !eventItem.status) return redirect('/');
-    */
-    const eventItem = event[Number(params.id) - 1] // isso e uma fake api, apenas para prosseguir nas aulas
+    
     if(!eventItem || !eventItem.status) return redirect('/');
     
     return (
